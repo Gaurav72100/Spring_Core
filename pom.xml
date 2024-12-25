@@ -18,7 +18,12 @@
     <version>6.2.0</version>
 </dependency>
 
-  
-  
-  </dependencies>
+
+
+   	<dependency>
+   		<groupId>com.mySpring</groupId>
+   		<artifactId>LearnSpring</artifactId>
+   		<version>0.0.1-SNAPSHOT</version>
+   	</dependency>
+   </dependencies>
 </project>
