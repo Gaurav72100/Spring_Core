@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Scope;
 import com.entity.Address;
 
 @Configuration
-@ComponentScan(basePackages="com.configuration")
+@ComponentScan(basePackages="com")
 public class AppConfig {
 
 	@Bean(initMethod="turnOn" , destroyMethod="turnOff")
