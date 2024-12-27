@@ -2,10 +2,10 @@ package com.entity;
 
 public class Address {
 
-       private	String city;
-	   private String state;
+       private	String city="Kanpur";
+	   private String state="Uttar pradesh";
 	   
-	   Address(){
+	    public Address(){
 		   System.out.println("Address Constructor Called()");
 	   }
 	   
@@ -25,10 +25,10 @@ public class Address {
 		this.state = state;
 	}
 
-	     public void TurnOn() {
+	     public void turnOn() {
 		   System.out.println("Should Turn On address");
 	   }
-	   public void TurnOff() {
+	   public void turnOff() {
 		   System.out.println("Turn Off the Address()");
 	   }
 
