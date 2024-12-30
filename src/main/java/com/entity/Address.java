@@ -2,7 +2,7 @@ package com.entity;
 
 public class Address {
 
-       private	String city="Kanpur";
+       private	String city;
 	   private String state="Uttar pradesh";
 	   
 	    public Address(){

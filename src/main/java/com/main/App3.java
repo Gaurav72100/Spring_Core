@@ -14,6 +14,8 @@ public class App3 {
 		ApplicationContext app = new AnnotationConfigApplicationContext(AppConfig.class);
 		
 		LazyEmployee bean = app.getBean(LazyEmployee.class);
+		//System.out.println(bean);
+		bean.getAddress().setCity("Lucknow");;
 		System.out.println(bean);
 
 	}

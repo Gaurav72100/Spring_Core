@@ -56,6 +56,11 @@ public class LazyEmployee {
 	public void setAddress(Address address) {
 		this.address = address;
 	}
+
+	@Override
+	public String toString() {
+		return "LazyEmployee [id=" + id + ", name=" + name + ", salary=" + salary + ", address=" + address + "]";
+	}
 	
 	
 
