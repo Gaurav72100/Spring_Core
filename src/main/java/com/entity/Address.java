@@ -1,36 +1,43 @@
 package com.entity;
 
-public class Address {
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
 
-       private	String city;
-	   private String state;
-	   
-	   Address(){
-		   System.out.println("Address Constructor Called()");
-	   }
-	   
-	   public String getCity() {
+@Component(value="address1")
+//@Primary
+public class Address implements IAddress {
+
+	  private String city="Lucknow";
+	  private String state ="Uttar Pradesh";
+	  
+	  public Address() {
+		  
+	  }
+
+	@Override
+	public String getCity() {
+		
 		return city;
-	   }
-	   
-	public void setCity(String city) {
-		this.city = city;
 	}
+
+	
+	public void setCity(String city) {
+		this.city=city;
+		
+	}
+
 	
 	public String getState() {
+		
 		return state;
 	}
+
 	
 	public void setState(String state) {
-		this.state = state;
+		this.state=state;
+		
 	}
 
-	     public void TurnOn() {
-		   System.out.println("Should Turn On address");
-	   }
-	   public void TurnOff() {
-		   System.out.println("Turn Off the Address()");
-	   }
 
 	@Override
 	public String toString() {
