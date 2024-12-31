@@ -13,9 +13,9 @@ public class Employee  {
 	private int id=105;
 	private String name="Atul";
 	
-	@Autowired
-
-	@Qualifier(value = "address1")
+//	@Autowired
+//
+//	@Qualifier(value = "address1")
 	private IAddress iaddress;
 	
 	public Employee() {}
@@ -28,6 +28,7 @@ public class Employee  {
 		this.name = name;
 		
 	}
+	
 	
 	public Employee(IAddress iaddress) {
 		this.iaddress=iaddress;
@@ -56,6 +57,9 @@ public class Employee  {
 	}
 
 
+	@Autowired
+
+	@Qualifier(value = "address1")
 
 	public void setIaddress(IAddress iaddress) {
 		System.out.println("called...........");
