@@ -1,9 +1,12 @@
 package com.entity;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Address {
 
-       private	String city;
-	   private String state;
+       private	String city="city";
+	   private String state="state";
 	   
 	   Address(){
 		   System.out.println("Address Constructor Called()");
@@ -25,12 +28,6 @@ public class Address {
 		this.state = state;
 	}
 
-	     public void TurnOn() {
-		   System.out.println("Should Turn On address");
-	   }
-	   public void TurnOff() {
-		   System.out.println("Turn Off the Address()");
-	   }
 
 	@Override
 	public String toString() {
