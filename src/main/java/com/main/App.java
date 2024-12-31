@@ -7,6 +7,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.entity.Address;
+import com.entity.Employee;
 
 public class App {
 
@@ -14,7 +15,7 @@ public class App {
 		
 		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		
-		Address a1 = (Address)context.getBean("add");
+		Employee a1 = (Employee)context.getBean("emp");
 		System.out.println(a1);
 
 	}

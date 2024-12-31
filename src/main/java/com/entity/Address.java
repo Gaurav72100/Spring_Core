@@ -25,12 +25,6 @@ public class Address {
 		this.state = state;
 	}
 
-	     public void TurnOn() {
-		   System.out.println("Should Turn On address");
-	   }
-	   public void TurnOff() {
-		   System.out.println("Turn Off the Address()");
-	   }
 
 	@Override
 	public String toString() {
