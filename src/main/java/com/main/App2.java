@@ -28,20 +28,20 @@ public class App2 {
 		/*--------Lookup----------------------*/
 		
 		ParentLookup bean = (ParentLookup)app.getBean(ParentLookup.class);
-		System.out.println(bean);
+		//System.out.println(bean);
 //		System.out.println(bean);
 //		System.out.println(bean); 
 		
 		
-		System.out.println(bean.getChildDetail());
-		
-		System.out.println("abstract method: "+bean.getChildDetail());
-		System.out.println("--------Lookup.2---------");
-
-		bean = app.getBean(ParentLookup.class);
-		System.out.println(bean);
-		System.out.println(bean.getChildDetail());
-		System.out.println(bean.getChildDetail());
+//		System.out.println(bean.getChildDetail());
+//		
+//		System.out.println("abstract method: "+bean.getChildDetail());
+//		System.out.println("--------Lookup.2---------");
+//
+//		bean = app.getBean(ParentLookup.class);
+//		System.out.println(bean);
+//		System.out.println(bean.getChildDetail());
+//		System.out.println(bean.getChildDetail());
 
 	}
 

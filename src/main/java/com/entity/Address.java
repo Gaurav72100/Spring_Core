@@ -1,7 +1,11 @@
 package com.entity;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class Address {
 
+	
+      	
        private	String city;
 	   private String state="Uttar pradesh";
 	   

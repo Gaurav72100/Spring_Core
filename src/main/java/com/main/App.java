@@ -22,10 +22,10 @@ public class App {
 		Employee e= app.getBean(Employee.class);
 		System.out.println(e);
 		
-		System.out.println();
-		e.getAddress().setCity("Lucknow");
-		System.out.println(e);
-		
+//		System.out.println();
+//		e.getAddress().setCity("Lucknow");
+//		System.out.println(e);
+//		
 		
 		
 

@@ -16,7 +16,7 @@ public class App3 {
 		LazyEmployee bean = app.getBean(LazyEmployee.class);
 		//System.out.println(bean);
 		bean.getAddress().setCity("Lucknow");;
-		System.out.println(bean);
+		//System.out.println(bean);
 
 	}
 
