@@ -10,17 +10,18 @@
         <context:annotation-config/>
         
         
-    <bean name="add" class="com.entity.Address">
+    <bean name="Address" class="com.entity.Address">
     <property name="city" value="pink city"></property>
     <property name="state" value="Rajasthan"></property>
     </bean>   
-    
+    <!--
      <bean name="add2" class="com.entity.Address">
     <property name="city" value="pink city2"></property>
     <property name="state" value="Rajasthan"></property>
-    </bean>    
+    </bean>  
+    -->  
         
-     <bean name="emp" class="com.entity.Employee">
+     <bean name="emp" class="com.entity.Employee"  autowire="byType">
      <property name="id" value="108"></property>
      <property name="name" value="Gopal Krishna"/>
      <property name="salary" value="5000000"/>
