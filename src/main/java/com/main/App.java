@@ -7,6 +7,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.entity.Address;
+import com.entity.PermanentAddress;
 
 public class App {
 
@@ -14,8 +15,12 @@ public class App {
 		
 		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		
-		Address a1 = (Address)context.getBean("add");
-		System.out.println(a1);
+		PermanentAddress ad=context.getBean(PermanentAddress.class);
+		Address a1=ad.getAdde();
+		Address a2=ad.getAdde();
+		
+		System.out.println(a1.hashCode());
+		System.out.println(a2.hashCode());
 
 	}
 

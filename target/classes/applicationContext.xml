@@ -7,10 +7,14 @@
         
         
         
-    <bean name="add" class="com.entity.Address">
-    <property name="city" value="pink city"></property>
-    <property name="state" value="Rajasthan"></property>
-    </bean>    
+   <bean id="add" class="com.entity.Address" scope="prototype">
+   <property name="city" value="Noida"/>
+   <property name="state" value="Uttar Pradesh"/>
+   </bean>
+   
+   <bean id="getAdd" class="com.entity.PermanentAddress">
+   <lookup-method name="getAdde" bean="add"/>
+   </bean>
         
         
  </beans>
