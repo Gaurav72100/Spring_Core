@@ -18,9 +18,18 @@ public class App {
 		
 		//ApplicationContext app = new ClassPathXmlApplicationContext("application.xml");
 		EmployeeDao edao = app.getBean("edao", EmployeeDao.class);
-		Employee emp = new Employee(3, "vipul", 80000);
-    	edao.saveEmployee(emp);
+		Employee emp = new Employee(5, "Anuj Sharma", 80000);
+		//edao.saveEmployee(emp);
+		
+		Employee emp2 = new Employee();
+		emp.setId(3);
+    	//int id=edao.deleteEmployee(emp);
+    	//System.out.println("Deleted Successfully"+ id);
 
+		
+		Employee emp3 = new Employee(3,"Ankush",450000);
+		int update=edao.updateEmp(emp3);
+		System.out.println("Successfully update"+update);
 	}
 
 }
