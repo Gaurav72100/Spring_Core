@@ -21,15 +21,15 @@ public class App {
 		Employee emp = new Employee(5, "Anuj Sharma", 80000);
 		//edao.saveEmployee(emp);
 		
-		Employee emp2 = new Employee();
-		emp.setId(3);
-    	//int id=edao.deleteEmployee(emp);
-    	//System.out.println("Deleted Successfully"+ id);
+//		Employee emp2 = new Employee();
+//		emp.setId(2);
+//    	int id=edao.deleteEmployee(emp2);
+//    	System.out.println("Deleted Successfully"+ id);
 
 		
 		Employee emp3 = new Employee(3,"Ankush",450000);
-		int update=edao.updateEmp(emp3);
-		System.out.println("Successfully update"+update);
+//		int update=edao.updateEmp(emp3);
+//		System.out.println("Successfully update"+update);
 	}
 
 }
