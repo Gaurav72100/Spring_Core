@@ -1,4 +1,4 @@
-package com.main;
+package com.client;
 
 
 
@@ -6,7 +6,8 @@ package com.main;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.entity.Address;
+import com.entity.Employee;
+import com.repo.EmployeeDao;
 
 public class App {
 
@@ -14,8 +15,12 @@ public class App {
 		
 		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		
-		Address a1 = (Address)context.getBean("add");
-		System.out.println(a1);
+		EmployeeDao dao = (EmployeeDao)context.getBean("edao");
+		
+		Employee e1 = new Employee(12,4000,54,"Amit");
+		Boolean emp=dao.saveEmployeeByPreparedStatement(e1);
+		System.out.println("Added Succesfully........"+emp);
+		
 
 	}
 
